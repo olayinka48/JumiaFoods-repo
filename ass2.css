@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+#learn{
+    font-size: 32px;
+    padding-top: 25px;
+}
+#startup{
+    padding-top: 60px;
+}
+.week{
+    padding-top: 10px;
+    font-size: 20px;
+}
+#button{
+    background-color: #EC6833; 
+    height: 50px;
+
+}
+#Get-advice{
+    margin-block: 50px;
+
+}#Get-advice2{
+    font-size: 20px;
+    font-weight: 400; word-spacing: 5px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+#startup-container{
+    background-color: #292519;
+    min-height: 55vh;
+
+}
+#How-startup{
+    color: #F0944D; 
+    font-size: 26px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 540;
+}
+.first-list{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+}
+#container-row{
+    margin-inline: 55px;
+    justify-content: center;
+}
+#container-card{
+  
+}
+h6{
+    font-weight: 670;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-block: 4px;
+}
+.card-text{
+    font-size:12px;
+}
+#card-image{
+    max-height: 140px;
+}
+#card-body{
+    min-height: 120px;
+}
+#matching{
+    font-size: 30px; 
+   
+}
+#footer{
+    min-height:40vh;
+    background-color: #131313;
+
+}
+#footer-main{
+    padding-block:60px;
+}
+
+
+
+
+
+
+@media (max-width: 700px){
+ #learn{
+     font-size: 23px;
+     padding-inline: 25px;
+ }
+.week{
+    font-size:14px;
+    padding-inline: 30px;
+}
+ #startup{
+    padding-left: 30px;
+}
+#button{
+   margin-bottom:15px;
+    
+}
+#Get-advice2{
+    font-size: medium;
+    text-align: center;
+    margin-left: 35px;
+}
+
+#container-row{
+    margin-inline: 0px;
+    justify-content: center;
+}
+#matching{
+    font-size: 25px; 
+   
+}
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 1000px){
+#container-row{
+    justify-content: start;
+    margin-inline: 15px;
+}
+}
+
+

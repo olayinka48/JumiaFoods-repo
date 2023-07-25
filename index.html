@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+
+</head>
+<body class="container">
+
+  <form class="form-control mx-auto d-flex mt-4 p-5 shadow-sm needs-validate" novalidate>
+    <div class="  vstack gap-3 mx-auto">
+      <input type="text" class="form-control w-80 " placeholder="First Name" name="firstName" required>
+      <input type="text" class="form-control w-80 " placeholder="Last Name" name="lastName" required>
+      <input class="form-control w-80 " type="password" placeholder="password here" name="password" required>
+      
+    <!-- <button class="w-80 bg-primary btn" onclick="myFunction()">Click here</button> -->
+
+    <button class="w-80 bg-primary btn"  type="submit" >Click here</button>
+     </div>
+     <span id="firstName" class="text-start mb-0"></span> <span id="lastName" class="text-start mb-0"></span>
+     <p id="message" class="text-start pt-1"></p>
+  </form>
+
+ <script>
+
+  function myFunction() {
+
+    if(firstName == "") {
+      message.innerHTML = 'Kindly Enter your password';
+   } 
+   else if (firstName.value === '' || lastNameInput.value === ''){
+    firstName = '';
+    lastName = '';
+   }
+  //  else if(userGrade <= 39) {
+  //          firstName.innerHTML =  firstNameInput.value; 
+  //          lastName.innerHTML = `${lastNameInput.value} Your Grade is:`;
+
+  //        message.innerHTML = ` ${myInput.value} is very poor 🙅🏽‍♀️ Try better next year`
+  //        message.style.color = "red";
+
+  // } else if (userGrade > 39 && userGrade <= 45) {
+
+  //        message.innerHTML = `${myInput.value} is poor 🤒 try to improve your performance next level`
+  //        message.style.color = "red";
+
+  // } else if (userGrade > 45 && userGrade <= 60) {
+
+  //        message.innerHTML = `${myInput.value} You Pass 🧐 but make sure you try better next level`
+  //        message.style.color = "yellow";
+
+
+  // } else if (userGrade > 60 && userGrade <= 70) {
+
+  //        message.innerHTML = `${myInput.value} Good Job 👏🏼 Keep it up`
+  //        message.style.color = "blue";
+
+
+  // } else if (userGrade > 70 && userGrade <=80) {
+
+  //         message.innerHTML = `${myInput.value} Great 😱 performance`
+  //         message.style.color = "purple";
+
+
+  // } else if (userGrade > 80 && userGrade <= 100){
+
+  //         message.innerHTML = ` ${myInput.value} Exellent 🥳 performance`
+  //         message.style.color = "green";
+
+
+  // } else if (userGrade > 100){
+
+  //    alert('Maximum Grade is 100')
+  // }
+
+          
+
+  //  myInput.value = ''
+  //  lastNameInput.value = ''
+  //  firstNameInput.value = ''
+
+
+
+  }
+ </script>
+  <script src="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+</body>
+</html>

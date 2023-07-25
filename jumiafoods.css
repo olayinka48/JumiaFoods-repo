@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     /* outline: 2px solid skyblue; */
+} 
+
+header{
+    background-color: #FF9900;
+    height: 90px;
+    /* text-align: center; */
+    padding-top: 32px;
+    
+}
+header, p{
+    font-weight: 500;
+}
+
+/* #loginbtn{
+    border: none;
+    background-color: #EF8B33; 
+} */
+
+.Everything{
+    padding-top: 100px;
+}
+#need{
+    text-align: center;
+}
+#delivery{
+    padding-top:35px;
+    padding-left: 15px;
+}
+#myinput{
+    border: 1px solid rgba(218, 218, 218, 0.87);
+    border-radius: 3px;
+    width: 750px;
+}
+#myinput:hover{
+    border-bottom: 3px solid #F68B1E;
+    
+}
+.popout-Button{
+    display: none;
+    background-color: rgb(205, 200, 200); 
+    border: none;
+    padding-block: 8px;
+   
+}
+.parent-div{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.1em;
+    margin-left: 10px;
+    margin-right: 15px;
+    backdrop-filter: blur(100px);
+}
+.parent-div .son{
+    min-height:150px ;
+    min-width: 175px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 1px rgb(212, 210, 210);
+}
+.center-div{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     margin-left: 10px;
+    margin-right: 10px; 
+    margin-top: 32px;
+    grid-gap: 0.8em;
+    margin-bottom: 100px;
+}
+.center-div .son{
+    min-height:150px ;
+    border-radius: 3px;
+    width: 175px;
+    box-shadow: 0 0 1px 1px rgb(212, 210, 210);
+  
+}
+#section1{
+    background-color: #F68B1E;
+    height: 47vh; 
+    margin-top: 60px;
+}
+#section{
+    background-color: #F68B1E;
+    min-height: 47vh; 
+    margin-top: 60px;
+}
+#change{
+    font-size: 32px;
+    font-weight:500;
+    padding-top: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent-div2{
+    min-height: 9vh;
+    display: grid;
+    grid-template-columns: 0.8fr 0.5fr 1fr;
+    margin-inline: 130px; 
+
+}
+#select{
+    height: 60px;
+    width: 200px;
+    margin-left: 130px;
+}
+#userInput{
+    height: 60px;
+    width: 200px;
+    /* margin-left: 130px; */
+}
+#miss{
+    text-align: center;
+}
+#section-3{
+    height: 70vh;
+}
+#vendor{
+    padding-block:150px ;
+    padding-left: 20px;
+}
+#cust{
+  font-size: 18px;
+}
+#section-4{
+    height: 77vh;
+}
+#order-food{
+    margin-top: 25px;
+}
+#jumia-app{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+#first-div{
+    border: 1px solid white;
+    width: 190px;
+    height: 70px;
+    border-radius: 2px;
+       
+}
+#download{
+    font-size: 10px;
+    color: #F5F5F5;
+    padding-top: 30px;
+}
+#section-5{
+    min-height: 100vh;
+    background-color: #2A2A2A;
+}
+#myContainer{
+    padding-top: 70px;
+    margin-bottom: 40px;
+}
+#container-child{
+    color: black;
+}
+.copy-right{
+    font-size: 17px;
+    font-weight: 300;
+}
+#advert-div{
+    position: relative;
+}
+
+#advert img{
+    position: relative;
+  }
+  
+#icon{
+    position:absolute;
+    top: 157.5%;
+    right: 0%;
+    left: 91.4%;
+    width: 50px;
+    color: white;
+    width: 18px;
+    outline: 2px solid red;
+  }
+ 
+  
+  #icon:hover{
+    background-color: #2A2A2A;
+  }
+
+@media screen and (max-width:550px){
+    .optionButton{
+        padding: 6px;
+    }
+    .popout-Button{
+        max-width: 350px;
+    }
+    #myinput{
+        max-width: 350px;
+    }
+    #select2{
+        max-width: 300px;
+    }
+    .userIndex{
+        max-width: 300px;
+    }
+    #food{
+        margin-left: 70px;
+        font-size: 22px;
+    }
+    #first-div{
+        margin-left: 50px;
+        width: 230px;
+        height: 70px;
+    
+    }
+    
+
+}
+@media screen and (max-width:800px){
+   /* #navlist{
+   text-align: center;
+    padding-top: 40px;
+   } */
+
+   #brand{
+    width: 100px;
+   }
+   #help{
+    display: none;
+   }
+   #loginbtn{
+    margin-right: 30px;
+    margin-left: 20px; 
+    width: 360px;
+    text-align: center;
+   
+}
+#myinput{
+    width: 360px;
+}
+.Everything{
+    text-align: left;
+    
+}
+#need{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+#delivery{
+    padding-top: 5px;
+}
+#advert{
+    display: none;
+   
+}
+#advert-div{
+    margin-top: 50px;
+}
+
+  
+ #change{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#change2{
+    display: none;
+}
+#select2{
+    height: 60px;
+    width: 360px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+.userIndex{
+    margin-bottom: 10px;
+    height: 60px;
+    width: 360px;
+    border: 1px solid white;
+}
+#news{
+    height: 35px;
+    padding-top: 8px;
+}
+#section{
+    min-height: 70vh;
+}
+.section1{
+   display: none; 
+
+}
+#cust{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+#news{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    
+}
+#food{
+    margin-left: 120px;
+    font-size: 22px;
+}
+#first-div{
+    margin-left: 70px;
+    width: 250px;
+    height: 70px;
+
+}
+.map{
+    display: none;
+}
+#section-4{
+    height: 60vh;
+}
+#section-3{
+    height: 45vh;
+    background-color: #cfcece62;
+    margin-top: 15px;
+}
+#sign{
+  font-size: 25px;
+  padding-bottom: 13px;
+}
+#vendor{
+    /* padding-block:5px ; */
+    padding-top: 5px;
+}
+#long{
+    width: 350px;
+}
+#container-child{
+    font-size: 13px;
+}
+
+#footer-heading{
+    padding-top: 15px;
+}
+.copy-right{
+    font-size: 13px;
+   
+}
+#myContainer{
+    margin-bottom: 20px;
+}
+}
+@media screen and (max-width:1094px){
+
+    .Everything{
+        padding-top: 30px;
+        justify-content: start;
+    }
+    #mycard{
+        display: none;
+    }
+    .center-div{
+        display: none;
+    }
+    .parent-div{
+      display: none;
+    }
+    #sevice{
+        display: none;
+    }
+    #container{
+        display: none;
+    }
+    #section-3{
+        height: 43vh;
+    }
+    .map{
+        display: none;
+    }
+    
+    #jumia-app{
+        display: none;
+    }
+    #miss{
+        display: none;
+    }
+    .plate{
+        display: none;
+    }
+    #vendor{
+        padding-block:10px ;
+    }
+}
+  
+  

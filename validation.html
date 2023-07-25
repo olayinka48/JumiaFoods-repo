@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>  
+<style>
+  .popout-button {
+    display: none;
+    /* position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; */
+  }
+  #inputField{
+    padding-bottom: -30px;
+  }
+</style> 
+<body class="container">
+
+  <input type="text" id="inputField" onclick="showButton()" placeholder="Click me">
+  <button class="popout-button btn btn-warning" id="popoutButton" onclick="buttonClicked()">Popout Button</button>
+
+  <script>
+    function showButton() {
+      var button = document.getElementById("popoutButton");
+      button.style.display = "block";    
+    }
+
+    function buttonClicked() {
+      alert("Button clicked!");
+    }
+  </script>
+ 
+
+  <script src="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia Foods</title>
+    <link rel="stylesheet" href="./jumiafoods.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+  </head>
+
+ <body>
+      <header class="container-fluid text-center">
+        <p class="text-white"> Need help placing an order? Call:
+           <a class="text-decoration-none text-white" href="#">018881108</a> or 
+           <a class="text-decoration-none text-white" href="#">017000465</a> 
+           <span>
+             <img src="./images/telephone.jpg" alt="telephone">
+           </span>
+              from 8am to 10pm to order.
+        </p>
+      </header>
+
+      <nav class="navbar navbar-expand-lg py-lg-2 bg-white sticky-top shadow-sm">
+        <section class="container-fluid">
+
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" 
+             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation" 
+              style="">
+              <span class="navbar-toggler-icon"></span>
+         </button>
+
+           <h3 id="Logo" class="ms-4 pt-2 d-none d-md-block">
+            JUMIA
+           </h3> 
+
+             <a class="navbar-brand me-auto" href="#">
+                 <img class="d-m-none"  id="brand" 
+                  src="./images/food.jpg" alt="">
+             </a>
+
+          <section class="container text-center collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="row">
+              <div class="col-lg-12">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-lg-none">
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span><img src="./images/jumiaking.jpg" alt=""></span>
+                        JUMIA PRIME
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      VENDORS
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      HELP
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <main class="container">
+              <div class="row">
+                 <div class="col-lg-2 ms-lg-auto col-md-10 col-sm-10">
+                   <form class="">
+                    <button style="font-size: 15px; border: none;
+                        background-color: #EF8B33;" class="optionButton p-lg-2 text-white w-100">
+                      LOGIN/ SIGNUP
+                    </button>
+                   </form>
+                 </div>
+              </div>
+            </main>
+
+          </section>
+        </section>
+    </nav>
+
+        
+
+      <section class="container-fluid" 
+          style="margin-top: px;">
+        <div class="row">
+          <div id="mycard" class="col-lg-2">
+            <div class="card" style="width: 200px;  margin-left: -13px; ">
+              <img src="./images/jumia sidebar2.jpg" alt="" width="205px" height="500px">
+            </div>
+          </div>
+
+          <aside class="col-lg-8 col-sm-12">
+            <div class="Everything" style=" border:none;">
+                  <h1 id="need" class=" fw-bold" style="color: rgb(75, 73, 73);">
+                  Everything you need, delivered now</h1>
+
+                <p id="delivery" class="text-start">
+                  <img src="./images/pin.jpg" alt="">
+                  Delivering to
+                </p>
+                      <section class="ms-3">
+                        <input id="myinput" onclick="showButton()" class="p-3"
+                        type="text"placeholder="Enteryour delivary address">
+       
+                         <button id="popoutButton" onclick="displayMap()" class="popout-Button w-90" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Choose on map</button>
+                         <section class="modal" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                           <div class="modal-dialog modal-dialog-centered">
+                             <div class="modal-content">
+                               <div class="modal-body">
+                                  <h3 class="">Delivering Location</h3>
+                                  <p> You can move the map to choose your location</p>
+                                 <div class="modal-dialog modal-dialog-centered mb-0">
+                                       <iframe style="height: 300px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d489887.2988593169!2d7.573480104585882!3d6.7439115916625525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1689778046914!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                     </div> 
+                               </div>
+                               <div class="modal-footer">
+                                
+                                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">CHOOSE THIS LOCATION</button>
+                               </div>
+                             </div>
+                           </div>
+                         </section>
+                      </section>
+                                    
+
+
+                <p id="sevice" class="text-start ms-3">Choose a service</p>
+                <div class="parent-div">
+
+                <div class="son" style="background-color:white;">
+                    <div>
+                      <img class="mt-3 ms-3"  src="./images/black.jpg" alt="" width="37px" height="40px">
+                    </div>
+
+                    <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                    Black Friday
+                  </div>
+                  <p class="text-start ps-2 pb-3"
+                    style="font-size: 14px; 
+                    color: rgb(126, 126, 126); ">
+                   The best food deals of the year!
+                 </p>
+                </div>
+
+                  <div class="son" style="background-color:white ;">
+                    <div>
+                      <img class="mt-3 ms-3"  src="./images/restaurant.jpg" alt="" width="40px" height="40px">
+                    </div>
+
+                    <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                    Restaurants
+                  </div>
+                  <p class="text-start ps-2 pb-3"
+                    style="font-size: 14px; 
+                    color: rgb(126, 126, 126); ">
+                   Food you love, from restaurants near you
+                 </p>
+                  </div>
+                  <div class="son" style="background-color:white ;">
+                    <div>
+                      <img class="mt-3 ms-3"  src="./images/jumiafood.jpg" alt="" width="40px" height="40px">
+                    </div>
+
+                  <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                    Jumia Food Market
+                  </div>
+                  <p class="text-start ps-2 pb-3"
+                     style="font-size: 14px; 
+                     color: rgb(126, 126, 126); ">
+                     Your groceries delivered in 15 minutes
+                 </p>
+                  </div>
+                  <div class="son" style="background-color:white ;">
+                    <div>
+                      <img class="mt-3 ms-3"  src="./images/party.jpg" alt="" width="45px" height="40px">
+                    </div>
+
+                    <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                      Party
+                  </div>
+                  <p class="text-start ps-2 pb-3"
+                    style="font-size: 14px; 
+                    color: rgb(126, 126, 126); ">
+                   Alcoholic drinks and more to get your party started
+                 </p>
+                  </div>
+                  <div class="son" style="background-color:white ;">
+                    <img class="mt-3 ms-3" src="./images/fine dinning.jpg" alt="">
+
+                    <div class=" text-start ps-2"
+                      style="color: rgb(189, 188, 188);
+                      padding-top: 25px; font-weight: 550;">
+                       Fine Dining
+                  </div>
+                    <p class="text-start ps-2 pb-3"
+                      style="font-size: 14px; 
+                      color: rgb(126, 126, 126); ">
+                     Quality dinner from the top rated restaurants
+                   </p>
+                  </div>
+                  <div class="son" style="background-color:white ;">
+                    <img class="mt-3 ms-3"  src="./images/supermarket.jpg" alt="" width="35px" height="35px">
+
+                    <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                     Supermarket
+                  </div>
+                  <p class="text-start ps-2 pb-3"
+                    style="font-size: 14px; 
+                    color: rgb(126, 126, 126); ">
+                    Fresh groceries and everyday essentials 
+                 </p>
+                  </div>
+                  <div class="son" style="background-color:white ;">
+                    <img class="mt-3 ms-3"  src="./images/pizza.jpg" alt="" width="35px" height="35px">
+
+                    <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                     Domino's Pizza
+                  </div>
+                  <p class="text-start ps-2 pb-3"
+                    style="font-size: 14px; 
+                    color: rgb(126, 126, 126); ">
+                    Fresh groceries and everyday essentials 
+                 </p>
+                  </div>
+                  <div  class="son" style="background-color:white ;">
+                    <img class="mt-3 ms-3"  src="./images/cold stone.jpg" alt="" width="35px" height="35px">
+
+                    <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                     Cold Stone
+                  </div>
+                  <p class="text-start ps-2 pb-3 pe-3"
+                    style="font-size: 14px; 
+                    color: rgb(126, 126, 126); ">
+                   Much more than ice cream
+                 </p>
+                  </div>
+              </div>
+              <div class="center-div">
+                <div class="son" style="background-color:white ;">
+                  <div>
+                    <img class="mt-3 ms-3"  src="./images/mrbiggs.jpg" alt="" width="50px" height="45px">
+                  </div>
+
+                <div class=" text-start ps-3"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                    Mr Bigg’s
+                </div>
+                <p class="text-start ps-3 pb-3"
+                  style="font-size: 14px; 
+                  color: rgb(126, 126, 126); ">
+                 Always Good
+               </p>  
+                </div>
+                <div class="son" style="background-color:white ;">
+                  <div>
+                    <img class="mt-3 ms-3"  src="./images/burgerking.jpg" alt="" width="50px" height="45px">
+                  </div>
+
+                <div class=" text-start ps-3"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                    Burger King
+                </div>
+                <p class="text-start ps-3 pb-3"
+                  style="font-size: 14px; 
+                  color: rgb(126, 126, 126); ">
+                 Have it your way
+               </p>  
+                </div>
+                <div  class="son" style="background-color:white ;">
+                  <div>
+                    <img class="mt-3 ms-3"  src="./images/tantalizer.jpg" alt="" width="50px" height="45px">
+                  </div>
+
+                <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                    Tantalizers
+                </div>
+                <p class="text-start ps-2 pb-3"
+                  style="font-size: 14px; 
+                  color: rgb(126, 126, 126); ">
+                 ...every bite, a promise kept
+               </p>  
+                </div>
+                <div  class="son" style="background-color:white ;">
+                  <div>
+                    <img class="mt-3 ms-3" src="./images/bukkahut.jpg" alt="" width="50px" height="45px">
+                  </div>
+
+                <div class=" text-start ps-2"
+                    style="color: rgb(189, 188, 188);
+                    padding-top: 25px; font-weight: 550;">
+                    Bukka Hut
+                </div>
+                <p class="text-start ps-2"
+                    style="font-size: 14px; 
+                    color: rgb(126, 126, 126); ">
+                     Restaurant of Choice for lovers of Nigeria Dishes
+                 </p>  
+                 
+                </div>
+               </div>
+            </div>
+          </aside>
+
+          <div id="mycard" class="col-lg-2">
+            <div class="card" style="width: 210px; margin-left:-25px;">
+              <img id="advert2" src="./images/jumia sidebar.jpg" alt="" width="215px">
+            </div>
+          </div>
+        </section>
+
+        <main id="advert-div" class="container-fluid  text-center">
+             <img id="advert" class="container col-lg-12 col-md-7" src="./images/jumiaadvert.jpg" alt="">
+             <!-- <img id="advert2" class="d-md-none" src="./images/jumiaadvert2.jpg" alt=""> -->
+          </main>
+             <div onclick="exit()">
+              <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </div> 
+
+        <section id="container" class="container text-center mt-3">
+          <div class="row align-items-start">
+            <h1 class="mb-8">How it Works</h1>
+            <div class="col">
+              <img src="./images/delivery location.jpg" alt="">
+              <h3 style="font-size: 27px;" class=" mt-3">Set delivery location</h3>
+              <p class="">Select the location where you want us to deliver</p>
+            </div>
+            <div class="col">
+              <img src="./images/computer.jpg" alt="">
+              <h3 style="font-size: 27px;" class=" mt-3">Choose the product</h3>
+              <p class="">Browse shops that deliver near you</p>
+            </div>
+            <div class="col">
+              <img src="./images/doorstep.jpg" alt="">
+              <h3 style="font-size: 27px; padding-top: 35px;" class="">Receive it at your doorstep</h3>
+              <p class="">Your order will be delivered to you in no time</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="section1" class="container-fluid d-none d-md-block">
+          <h1 id="change" class="text-white text-center">
+                Subscribe to our newsletter today!
+          </h1>
+          <p id="change2" style="font-size: small; font-weight: 200;" class="text-white text-center">
+              Don't miss out on our great offers & Receive deals
+              from all our top vendors via e-mail
+          </p>
+            <div id="clearDiv" class="parent-div2">
+              <div id="first-child" class="child">
+                <select class=" ps-3 pe-4" id="select" 
+                        style="border: 1px groove white;">
+                        <option value="" class="text-start">Select your city</option>
+                        <option value="" class=" fw-bold ms-5"><b>Popular cities</b></option>
+                        <option value="" class="">ABUJA</option>
+                        <option value="" class="">BAYELSA</option>
+                        <option value="" class="">DELTA</option>
+                        <option value="" class="">PORT HARCOURT</option>
+                        <option value="" class=" fw-bold ms-5">More Cities</option>
+                        <option value="">ABAKALIKI</option>
+                        <option value="">ABIA</option>
+                        <option value="">ADO EKITI</option>
+                        <option value="">ANAMBRA</option>
+                        <option value="">BENIN</option>
+                        <option value="">ENUGUN</option>
+                        <option value="">IBADAN</option>
+                        <option value="">KANO</option>
+                        <option value="">KWARA</option>
+                        <option value="">MINNA</option>
+                        <option value="">OGUN</option>
+                        <option value="">ONDO</option>
+                        <option value="">OSUN</option>
+                        <option value="">OWERRI</option>
+                        <option value="">UYO</option>
+                </select>
+             </div>
+             <div class="child text-start">
+               <input id="userInput" class="ps-2" type="email"placeholder="Email Address" 
+                 style="border: 1px groove white;" required>
+             </div>
+             <div class="">
+                <button id="showArrow" onclick="signUp()" style="background-color: #4A4A4A; font-size: small; padding: 20px;" class="text-white text-center btn">SUBSCRIBE NEWSLETTER</button>
+             </div>
+           </div>
+
+           <form id="miss" class="check-box my-3">
+            <input name="checkbox" class="form-check-input mb-3 border border-light"
+              type="checkbox" value="checked" id="flexCheckDefault" style="background-color:#F68B1E ;">
+             <label style="font-size:12px;" class="form-check-label text-white" for="flexCheckDefault">
+              I have read and accepted the <a class="text-white" href="#">Terms and conditions</a>  and the <a  class="text-white" href="#">Privacy policy</a>
+            </label> 
+            <!-- <input type="submit" value="submit!"> -->
+           </form>
+           </section>
+
+           <section id="section" class="container-fluid d-md-none">
+            <h1 id="change" class="text-white text-center">
+                  Subscribe to our newsletter today!
+            </h1>
+            <p id="change2" class="text-white text-center">
+                Don't miss out on our great offers & Receive deals
+                from all our top vendors via e-mail
+            </p>
+
+            <div class="container text-center"> 
+              <div>
+                 <select id="select2" name="">
+                     <option value="">select your city</option>
+                     <option value="" class="text-start">Select your city</option>
+                     <option value="" class=" fw-bold ms-5"><b>Popular cities</b></option>
+                     <option value="" class="">ABUJA</option>
+                     <option value="" class="">BAYELSA</option>
+                     <option value="" class="">DELTA</option>
+                     <option value="" class="">PORT HARCOURT</option>
+                     <option value="" class=" fw-bold ms-5">More Cities</option>
+                     <option value="">ABAKALIKI</option>
+                     <option value="">ABIA</option>
+                     <option value="">ADO EKITI</option>
+                     <option value="">ANAMBRA</option>
+                     <option value="">BENIN</option>
+                     <option value="">ENUGUN</option>
+                     <option value="">IBADAN</option>
+                     <option value="">KANO</option>
+                     <option value="">KWARA</option>
+                     <option value="">MINNA</option>
+                     <option value="">OGUN</option>
+                     <option value="">ONDO</option>
+                     <option value="">OSUN</option>
+                     <option value="">OWERRI</option>
+                     <option value="">UYO</option>
+                 </select>
+               </div>
+               <div>
+                 <input  class="userIndex" type="text" placeholder="E-mail">
+               </div>
+               <div>
+                 <div id="" class="check-box mt-4">
+                     <input class="text-start form-check-input mb-3 border border-light"
+                         type="checkbox" value="" id="flexCheckDefault"
+                         style="background-color:#F68B1E ;">
+                          <span class="text-white "> I have read and accepted the</span> 
+                          <a class="text-white" href="#">Terms and conditions</a> 
+                          <span class="text-white "> and the </span>
+                          <a  class="text-white" href="#">Privacy policy</a>
+                 </div>
+               <div id="news" class="bg-dark ">
+                   <button type="button" class="text-white w-100 pt-2">SUBSCRIBE NEWSLETTER</button>
+               </div>
+            </div>
+           </section>
+
+           <section id="section-3" class="container-fluid" style="background-color: white;">
+                  <div id="plate" class="row text-start">
+                    <div class="col-lg-3">
+                         <img class="plate" src="./images/plate.jpg" alt="" width="550px" style="margin-left: -220px;">
+                    </div>
+                    <div id="vendor" class="col-lg-5 col-sm-12 text-center">
+                        <h1 id="sign">Sign Up As a Vendor On Jumia Food</h1>
+                        <p id="cust">Get more customers and increase your sales</p>
+                        <button  id="long" class="text-white"
+                          style="background-color: #4A4A4A;
+                          border: none; padding: 10px;">
+                           SIGN UP
+                        </button>
+                    </div>
+                  </div>
+            </section>
+
+            <section id="section-4" class="container-fluid" 
+                     style="background-color:#F68B1E;">
+                <main id="my-container" class="container row gap-lg-5">
+                    <div id="order-food" class="col-lg-5 col-sm-12 ms-3">
+                      <h1 id="food" class="text-white mb-3">Order food</h1>
+                          <p id="jumia-app" class="text-white">The Jumia Food app makes it simple for anybody to use
+                           a mobile to look over the menu of the best 
+                           vendors and place an order for home delivery.
+                          </p>
+
+                          <div class="row gap-3 mt-4">
+                             <div id="first-div" class=" col-3 text-center" style="background-color: #F68B1E;">
+                              <span ><img class="text-start mt-1" src="./images/jumiaapple.jpg" alt=""></span>
+                                <span id="download">Download on the</span> <br>
+                                <span class="text-white">APP Store</span>
+                             
+                            </div>
+                             <div id="first-div" class=" col-3 text-center" style="background-color: #F68B1E;">
+                              <span> <img class="text-start" src="./images/jumiagoggle.jpg" alt=""></span>
+                              <span id="download">Download on the</span> <br>
+                              <span class="text-white">Goggle Play</span>
+                              
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-2">
+                          <img class="map" src="./images/jumia-food-app-mockup.png" alt="" width="600px" height="547px" 
+                          style="margin-top: -80px; margin-right: -50px;">
+                      </div>
+                    </main>
+
+            
+            </section>
+
+
+            <section id="section-5" class="container-fluid">
+                    <div id="myContainer" class="container row ms-3"> 
+                      <div id="container-child" class="col-lg-3 col-md-8 col-sm-12 text-start"
+                         style="color: rgb(207, 206, 206);">
+                        <p class="text-start text-white">City</p>
+                        <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Abuja</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Ibadan</a>
+                         <a class="nav-link text-decoration-none"
+                          href="#" style="font-weight: 100;">Port Harcourt</a>
+                         <a class="nav-link text-decoration-none"
+                          href="#" style="font-weight: 100;">Lekki Phase 1</a>
+                         <a class="nav-link text-decoration-none"
+                          href="#" style="font-weight: 100;">Victoria Island</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Yaba</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Marina</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Wuse II</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Maitama</a>
+                         <a class="nav-link text-decoration-none"
+                          href="#" style="font-weight: 100;">Ikoyi - Dolphin Estate</a>
+                         <a class="nav-link text-decoration-none"
+                          href="#" style="font-weight: 100;">Supermarket Online</a>
+                         <a class="nav-link text-decoration-none"
+                          href="#" style="font-weight: 100;">Pharmacy Online</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Shopping Online</a>
+                      </div>
+                      <div id="container-child" class="col-lg-3 col-md-8  col-sm-12 " style="color: rgb(207, 206, 206);">
+                         <P id="footer-heading" class="text-white">Cuisines</P>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Burgers in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Pizza in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Nigerian Food in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">African Food in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Chinese Food in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Indian Food in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">American Food in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Seafood in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Breakfast Menu in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Cakes in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Sandwiches in Lagos</a>
+                         <a class="nav-link text-decoration-none"
+                          href="#" style="font-weight: 100;">Salads in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Pasta in Lagos</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">African Food in Abuja</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Sandwiches in Abuja</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Salads in Abuja</a>
+                         <a class="nav-link text-decoration-none" 
+                          href="#" style="font-weight: 100;">Nigerian Food in Abuja</a>
+                      </div>
+                      <div id="container-child" class="col-lg-3 col-md-8  col-sm-12 " style="color:blanchedalmond;">
+                        <p id="footer-heading" class="text-white">Popular vendors</p>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Shiro</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Bambo Lounge</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Cilantro Delivery</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Bungalow Restaurant</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Chicken Capitol</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Chicken Republic</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Casper & Gambini's</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Johnny Rockets</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Drumstix</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Seven Eagles Spur</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Hard Rock Cafe</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Eric Kayser</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Kohinoor Lounge</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Krispy Kreme Doughnuts & Coffee</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Crepaway</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Debonairs Pizza</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">KFC Delivery</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">The Place</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Bukka Hut</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Pizza Hut</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Cold Stone Creamery</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Rhapsody's</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Spice Route</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">355 Restaurant & Lounge Landmark</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">China wok</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">Terra Kulture</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100;">All restaurant near you</a>
+                       
+                      </div>
+                      <div id="container-child" class="col-lg-3 col-md-8 col-sm-12 " style="color: rgb(207, 206, 206);">
+                        <p id="footer-heading" class="text-white">Jumia Food</p>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">About</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">Press</a>
+                        <a class="nav-link text-decoration-none" 
+                        href="" style="font-weight: 100; font-size: 15px;">Contact</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">Terms and Conditions</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">Privacy Policy</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">Jumia Food Prime - Unlimited Free</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">Delivery</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">Become a rider!</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">Sell on Jumia Food</a>
+                        <a class="nav-link text-decoration-none" 
+                         href="" style="font-weight: 100; font-size: 15px;">vendors</a>
+                        <p class="mt-3 text-white"><a class="nav-link text-decoration-none" href="#" style="font-weight: 100; font-size: 15px;"></a>Contact us</p> 
+                           <div class="row gap-2">
+                             <div class="col-1">
+                               <img src="./images/jtwitter.jpg" alt="">
+                             </div>
+                             <div class="col-1">
+                              <img src="./images/jfacebook.jpg" alt="">
+                             </div>
+                             <div class="col-1">
+                              <img src="./images/jinstagram.jpg" alt="">
+                             </div>
+                           </div>
+                       
+                      </div>
+                    </div>
+                    <div id="policy" class="container-fluid row justify-content-between">
+                      <div class="col-lg-6 col-sm-12" style="color: rgb(207, 206, 206);">
+                       <p class="copy-right">Terms and Conditions.Privacy Policy</p>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 text-end" style="color: rgb(207, 206, 206);">
+                        <p class="copy-right">&#169; Copyright Jumia Food is a registered trademark</p>
+                      </div>
+                            
+                    </div>
+            </section>
+
+
+
+            <script src="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+            <script defer src="jumia.js"></script>
+</body>
+</html>

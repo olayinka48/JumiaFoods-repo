@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body class="container">
+
+      <form class="form-control shadow-sm mt-3">
+            <div class="vstack gap-3 p-2">
+                       <h1 class="text-center">Sign Up</h1>
+              <input class="form-control" placeholder="First name" type="text" id="firstName">
+              <input class="form-control" placeholder="Last name" type="text" id="lastName">
+              <input class="form-control" placeholder="Email Adderess" type="text" id="Email">
+              <input class="form-control" placeholder="password" type="password" id="Password">
+              <button onclick="signUp()" class="btn btn-primary">Sign Up</button>
+            </div>
+      </form>
+
+      <p id="demo"></p>
+  
+       <script>
+        let allInputData = [];
+            const signUp = () => {
+
+               userData = {
+                 firstname : firstName.value,
+                 lastname : lastName.value,
+                 email : Email.value,
+                 password : Password.value,
+               }
+               allInputData.push(userData)
+               console.log(allInputData)
+               
+             }
+            
+       </script>
+ 
+</body>
+</html>
